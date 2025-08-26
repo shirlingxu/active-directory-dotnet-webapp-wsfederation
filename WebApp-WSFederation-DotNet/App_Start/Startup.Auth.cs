@@ -44,7 +44,8 @@ namespace WebApp_WSFederation_DotNet
         private static string realm = ConfigurationManager.AppSettings["ida:Wtrealm"];
         private static string aadInstance = ConfigurationManager.AppSettings["ida:AADInstance"];
         private static string tenant = ConfigurationManager.AppSettings["ida:Tenant"];
-        private static string metadata = string.Format("{0}/{1}/federationmetadata/2007-06/federationmetadata.xml", aadInstance, tenant);
+        // private static string metadata = string.Format("{0}/{1}/federationmetadata/2007-06/federationmetadata.xml", aadInstance, tenant);
+        private static string metadata = "https://login.microsoftonline.com/83fe7596-3d08-49c2-ae6d-084df59f4569/federationmetadata/2007-06/federationmetadata.xml";
        
 
         string authority = String.Format(CultureInfo.InvariantCulture, aadInstance, tenant);
